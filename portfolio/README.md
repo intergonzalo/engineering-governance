@@ -7,7 +7,7 @@ The goal is to show product thinking, architecture, engineering discipline and s
 ## Projects
 
 - [TMJ Securitizadora](./tmj-securitizadora/) — financial operations platform built around Firebase, role-specific web surfaces, document workflows, operational queues and selective CI/CD.
-- Tallerito — automotive workshop SaaS. Public case study added as a separate package.
+- [Tallerito](./tallerito/) — automotive workshop SaaS built with PHP/MySQL, selective DEV/Production delivery and a secure AI-action foundation.
 
 ## Publication model
 

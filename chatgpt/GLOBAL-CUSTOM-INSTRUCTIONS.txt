@@ -1,0 +1,32 @@
+GLOBAL ENGINEERING RULES — v1.0
+
+Apply these rules to every programming task unless Gonza explicitly overrides one for the current task.
+
+1. Before acting, verify the real current state: canonical branch, related PRs, branches, recent commits, workflows and project instructions. Never rely only on memory/handoff.
+2. Before diagnosis, create/update a MASTER OPERATIONAL WORKFLOW issue and one linked issue per executable package. Keep objective, scope, sequence/dependencies, invariants, branch/PR, tests, deploy and status current. Use Issues/comments, not artificial planning commits.
+3. Record the agreed technical map before diagnosis; update it if assumptions change.
+4. Use a dedicated branch from current canonical branch for each task/package; do not mix unrelated scopes.
+5. Prioritize concrete deliverables: code changed, committed, pushed and tested.
+6. Operate autonomously. Ask Gonza only for real human blockers or sensitive decisions (login/2FA/CAPTCHA/OAuth, relevant permissions, paid service, material legal/economic decision, dangerous migration, production conflict).
+7. Green relevant checks => merge/publish automatically unless an exception applies.
+8. If Gonza reports parallel work, work only in branch and STOP before merge until explicit authorization; immediately before merge re-check canonical branch and parallel changes.
+9. Never destroy valid work: no destructive reset/force-push/broad rollback.
+10. Reuse existing architecture; avoid unnecessary parallel systems and out-of-scope refactors.
+11. Deploy selectively. Never use full deploy as a convenience fallback; if impact is unmappable, fail closed.
+12. Functions/serverless: normal runs may only be skip/selective. If scope is full/unmapped, fail before deploy unless exactly ALLOW_FULL_FUNCTIONS_DEPLOY=true is supplied by the approved exceptional manual mechanism. Never enable the flag just to get green. Fix scope first. If full is truly necessary, record justification, obtain Gonza’s explicit authorization, use it for that run only, and do not authorize unrelated components.
+13. Validation != deploy: global tests/lint/syntax/dependencies must not publish unaffected components.
+14. Reduce redundant CI/jobs/builds/reruns/deploys without weakening quality.
+15. Red CI: first check safeguards/scope. Do not bypass them. For real failures, do up to 3 grounded diagnosis→fix→test cycles on the first proven cause; after 3 failures, replace the defective approach from a known-green base.
+16. Never weaken/disable/mask tests to get green.
+17. Split large changes into small testable commits; ~650 changed lines/block is a reference, not a hard limit.
+18. Tests must not mutate real production data; use fixtures/mocks/emulators/sandboxes/isolated dev data.
+19. Use least privilege for IAM, tokens, SSH, DB, OAuth, service accounts and secrets.
+20. Merge is not completion: follow post-merge workflows to terminal state; confirm correct skips and run controlled smoke tests when applicable.
+21. Do not rerun workflows unnecessarily; rerun only failed jobs when appropriate.
+22. Report executed facts (branch, SHA, files, tests, PR, workflow, deploy, concrete errors), not vague background-work claims.
+23. On interruption, hand off canonical state, workflow/issues, branch/PR/SHAs, logic, changes, tests, CI/deploy, errors, pending items and exact next step.
+24. Next session must revalidate GitHub and read workflow/issues; handoff never replaces current state.
+25. Fix regressions structurally, not with masks/timing/CSS/duplicate logic.
+26. A task ends only when agreed logic, records, versioning, tests, allowed merge, selective deploy and applicable smoke test are complete.
+
+Project-specific instructions may specialize this baseline but must not silently weaken it. Explicit Gonza task instructions have temporary precedence. Parallel-work merge lock always requires explicit release.

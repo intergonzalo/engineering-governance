@@ -35,7 +35,7 @@ This GitHub documents the **technology side of a broader executive profile**.
 
 I do not treat software, product or AI as disciplines detached from the business. When a process, control, decision or customer interaction can be improved through technology, I work close enough to the architecture and implementation to take it from the business requirement all the way into production: **workflows, data models, automation, AI, code, tests, CI/CD and release governance**.
 
-That is not a career change into software engineering. It is part of how I operate companies.
+Technology is not a separate professional identity here. It is part of how I operate companies.
 
 ### Public engineering evidence
 
@@ -70,4 +70,4 @@ Production repositories remain private by design. Public repositories expose the
 
 ---
 
-**The point of this GitHub is not to present me as a developer. It is to make one part of my executive capability inspectable: I can move from strategy and operating design into the technology required to execute them.**
+**This GitHub makes one part of my executive capability inspectable: the ability to move from strategy and operating design into the technology required to execute them.**

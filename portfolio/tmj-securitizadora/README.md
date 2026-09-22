@@ -13,8 +13,10 @@ The engineering objective is broader than creating screens: the platform has to 
 ```mermaid
 flowchart LR
     U[Web users] --> H[Role-specific web surfaces]
+    G[Constrained agent clients] --> B[Agent action boundary]
     H --> A[Authentication boundary]
-    A --> S[Application services]
+    A --> S[Canonical application services]
+    B --> S
     S --> D[(Operational data)]
     S --> F[Server-side functions]
     F --> X[External integrations]
@@ -22,6 +24,7 @@ flowchart LR
     Q --> P[Selective deployment]
     P --> H
     P --> F
+    P --> B
 ```
 
 ### Core technology
@@ -31,6 +34,7 @@ flowchart LR
 - Cloud Firestore
 - Cloud Storage
 - Cloud Functions v2
+- containerized Node.js services
 - GitHub Actions
 - JavaScript web applications
 
@@ -56,12 +60,35 @@ A small code change should not implicitly publish the whole platform. Deployment
 
 Internal interfaces prioritize compact information density, persistent filters, non-blocking background loading and explicit operational status. This matters in high-frequency queues where latency and visual ambiguity become operational costs.
 
+### 6. Secure agentic operations
+
+Current engineering work adds a constrained remote-agent boundary over existing application services. Authentication and delegated access remain scope-limited; actions are explicitly allowlisted and evaluated server-side. Material operations use deterministic idempotency, claims/leases and correlation IDs. Unsafe operations can hard-stop, while objective exceptions can be routed to typed human queues.
+
+The agent layer does not receive arbitrary datastore access and does not duplicate the authoritative financial/document workflow. It calls canonical server-side business boundaries so the traditional UI and agent-driven flows remain governed by the same invariants.
+
+A fully independent public implementation of these patterns is available in [Agentic Operations Gateway](../../reference/agentic-operations-gateway/).
+
+### 7. Deterministic high-volume migrations
+
+Migration tooling separates **plan, review, authorization and apply** instead of treating an import file as permission to overwrite live state. Records can be classified as create/no-op/conflict/preserve; conflicts require explicit decisions; authorization is bound to deterministic state; workers can resume in chunks and fail closed when the live base changed unexpectedly.
+
+This design supports large migrations and repeated dry runs while preserving live-only data unless deletion is separately and deliberately modeled.
+
+A synthetic executable version of the pattern is available in [Deterministic Data Migrations](../../reference/deterministic-data-migrations/).
+
+### 8. Scale-safe reporting
+
+Reporting paths are designed to paginate complete datasets rather than rely on arbitrary record ceilings. Bounded concurrency and shared aggregation avoid repeated full scans of the same business data, and completeness metadata makes truncation observable instead of silent.
+
 ## Engineering outcomes demonstrated by the private implementation
 
 - multiple role-specific web applications under one governed architecture;
 - reusable domain services instead of duplicated business logic;
 - stateful operational queues with traceable transitions;
 - document/signature delivery patterns built for retries and recovery;
+- constrained agent actions with explicit server-side authority boundaries;
+- resumable migration/reconciliation tooling with deterministic conflicts;
+- scale-safe reporting without silent business-record caps;
 - regression coverage around critical workflows;
 - CI/CD safeguards separating validation from deployment;
 - selective publication by affected component.

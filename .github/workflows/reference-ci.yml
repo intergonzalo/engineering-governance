@@ -23,6 +23,8 @@ jobs:
         project:
           - reference/agentic-operations-gateway
           - reference/deterministic-data-migrations
+          - reference/selective-deployment-guard
+          - reference/conversational-operations-router
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

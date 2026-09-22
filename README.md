@@ -1,29 +1,48 @@
-# Engineering Governance
+# Engineering Governance & Public Engineering Portfolio
 
-Canonical global engineering governance for Gonza's software projects.
+[![Public reference CI](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml/badge.svg)](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml)
 
-> **Professional portfolio:** [Gonzalo Burgos — Business, Product & Engineering](./portfolio/)
+**Gonzalo Burgos — Business · Product · Engineering**
 
-This repository contains:
-- the global engineering baseline;
-- ChatGPT compact global instructions;
-- project overlay and AGENTS templates;
-- adoption architecture and changelog;
-- curated public case studies from private production projects;
-- executable synthetic reference implementations with automated tests.
+I build operating systems for real businesses: translating commercial, legal and operational requirements into software, workflows, controls and repeatable delivery.
 
-Projects should vendor a snapshot of the global baseline and keep project-specific rules in a local overlay.
+## Public code proof
 
-See `GLOBAL-ENGINEERING-RULES.md` and `GLOBAL-GOVERNANCE-ARCHITECTURE.md`.
+**4 executable reference implementations · 28 automated tests · Node.js 22 · zero runtime dependencies · public CI**
 
-## Public engineering portfolio
+| Reference | What it proves |
+| --- | --- |
+| [Agentic Operations Gateway](./reference/agentic-operations-gateway/) | constrained agent authority, scopes, policy decisions, idempotency, claims/leases, human review and optimistic concurrency |
+| [Deterministic Data Migrations](./reference/deterministic-data-migrations/) | PLAN → REVIEW → AUTHORIZE → APPLY, explicit conflicts, deterministic authorization, resumability and stale-state protection |
+| [Selective Deployment Guard](./reference/selective-deployment-guard/) | change-impact mapping, validation/deploy separation, selective targets and fail-closed unknown runtime impact |
+| [Conversational Operations Router](./reference/conversational-operations-router/) | conversational context, ambiguity handling, natural follow-ups, TTL-bound confirmation and allowlisted domain execution |
 
-The [portfolio](./portfolio/) presents selected work across engineering governance, TMJ Securitizadora and Tallerito.
+See the complete [Public Evidence Map](./PUBLIC-EVIDENCE.md).
 
-Executable public references:
-- [Agentic Operations Gateway](./reference/agentic-operations-gateway/)
-- [Deterministic Data Migrations](./reference/deterministic-data-migrations/)
+## Production case studies
 
-The [profile README source](./profile/README.md) is ready for the special `intergonzalo/intergonzalo` repository.
+- [TMJ Securitizadora](./portfolio/tmj-securitizadora/) — private-source financial operations platform: operational workflows, guarded delivery, agentic boundaries, deterministic migration/reconciliation and scale-safe reporting.
+- [Tallerito](./portfolio/tallerito/) — private-source automotive-workshop SaaS: PHP/MySQL modernization, selective DEV/Production delivery and production voice/text AI operations.
 
-The portfolio is deliberately curated: private repositories remain private, and production secrets, sensitive data, proprietary business logic and security internals are not mirrored here.
+Production repositories remain private by design. Public references are independent synthetic implementations: useful enough to inspect and run, without mirroring customer data models, financial logic, credentials, private endpoints or security internals.
+
+## Engineering governance
+
+This repository is also the canonical engineering baseline used across the represented projects. It includes:
+
+- issue-driven execution and explicit technical maps;
+- dedicated branches and pull requests;
+- automated validation before integration;
+- selective deployment and fail-closed safeguards;
+- least privilege and test isolation;
+- controlled post-merge validation;
+- project overlay and AGENTS templates.
+
+See [GLOBAL-ENGINEERING-RULES.md](./GLOBAL-ENGINEERING-RULES.md) and [GLOBAL-GOVERNANCE-ARCHITECTURE.md](./GLOBAL-GOVERNANCE-ARCHITECTURE.md).
+
+## Professional profile
+
+- [Portfolio landing](./portfolio/)
+- [CV / profile summary](./portfolio/CV-SUMMARY.md)
+- [GitHub profile README source](./profile/README.md)
+- [Public reference index](./reference/)

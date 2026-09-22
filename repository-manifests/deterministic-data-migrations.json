@@ -1,0 +1,10 @@
+{
+  "repository": "deterministic-data-migrations",
+  "full_name": "intergonzalo/deterministic-data-migrations",
+  "visibility": "public",
+  "source_path": "reference/deterministic-data-migrations",
+  "description": "Deterministic, resumable live-data migration reference with explicit conflicts, authorization digests and stale-state protection.",
+  "topics": ["data-migration", "idempotency", "distributed-systems", "data-integrity", "nodejs"],
+  "runtime": "Node.js 22",
+  "tests": 7
+}

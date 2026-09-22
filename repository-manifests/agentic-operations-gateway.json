@@ -1,0 +1,10 @@
+{
+  "repository": "agentic-operations-gateway",
+  "full_name": "intergonzalo/agentic-operations-gateway",
+  "visibility": "public",
+  "source_path": "reference/agentic-operations-gateway",
+  "description": "Secure agentic operations reference: scopes, policy decisions, idempotency, leases, human review and optimistic concurrency.",
+  "topics": ["ai-agents", "agentic-ai", "authorization", "idempotency", "human-in-the-loop", "nodejs"],
+  "runtime": "Node.js 22",
+  "tests": 7
+}

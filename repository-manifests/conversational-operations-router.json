@@ -1,0 +1,10 @@
+{
+  "repository": "conversational-operations-router",
+  "full_name": "intergonzalo/conversational-operations-router",
+  "visibility": "public",
+  "source_path": "reference/conversational-operations-router",
+  "description": "Conversational operational-AI reference with context, ambiguity resolution, natural confirmations and allowlisted domain actions.",
+  "topics": ["conversational-ai", "ai-agents", "workflow", "human-in-the-loop", "nodejs"],
+  "runtime": "Node.js 22",
+  "tests": 7
+}

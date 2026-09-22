@@ -1,0 +1,10 @@
+{
+  "repository": "selective-deployment-guard",
+  "full_name": "intergonzalo/selective-deployment-guard",
+  "visibility": "public",
+  "source_path": "reference/selective-deployment-guard",
+  "description": "Fail-closed selective deployment reference: change-impact mapping, validation/deploy separation and explicit full-release authorization.",
+  "topics": ["cicd", "devops", "deployment", "github-actions", "software-safety", "nodejs"],
+  "runtime": "Node.js 22",
+  "tests": 7
+}

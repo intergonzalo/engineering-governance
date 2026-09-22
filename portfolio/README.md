@@ -9,8 +9,10 @@ My work sits at the intersection of **business design, product ownership and eng
 | Project | What it demonstrates | Source model |
 | --- | --- | --- |
 | [Engineering Governance](../) | Engineering operating standards, issue-driven execution, branch/PR discipline, selective deploy and fail-closed safeguards | Public |
-| [TMJ Securitizadora](./tmj-securitizadora/) | Financial operations platform, role-specific applications, document workflows, operational queues, idempotency and guarded Firebase delivery | Private source / public case study |
-| [Tallerito](./tallerito/) | Automotive-workshop SaaS, PHP/MySQL modernization, DEV/Production isolation, vehicle-data enrichment and a secure AI-action foundation | Private source / public case study |
+| [Agentic Operations Gateway](../reference/agentic-operations-gateway/) | Executable constrained-agent architecture: authorization, policies, idempotency, leases, human review and optimistic concurrency | Public executable reference |
+| [Deterministic Data Migrations](../reference/deterministic-data-migrations/) | Executable PLAN/REVIEW/AUTHORIZE/APPLY migration model with conflicts, resumability and stale-state protection | Public executable reference |
+| [TMJ Securitizadora](./tmj-securitizadora/) | Financial operations platform, role-specific applications, document workflows, operational queues, agentic boundaries, migrations and guarded Firebase delivery | Private source / public case study |
+| [Tallerito](./tallerito/) | Automotive-workshop SaaS, PHP/MySQL modernization, DEV/Production isolation and production voice/text AI operations | Private source / public case study |
 
 ## What I do
 
@@ -51,19 +53,21 @@ The process is designed to keep speed and control compatible: ship small, preser
 - workflow and state-machine design;
 - canonical identities and traceable transitions;
 - idempotent operations and retry-safe integrations;
-- secure authentication/authorization boundaries;
+- secure agent/action boundaries and least privilege;
+- claims, leases, finite retries and optimistic concurrency;
+- deterministic migration planning and conflict resolution;
 - reusable application services instead of duplicated page logic;
 - CI/CD governance and selective deployment;
 - regression testing around business-critical flows;
 - mobile operational UX and information-dense back-office interfaces;
-- AI interfaces constrained by explicit server-side action boundaries;
+- voice/text AI constrained by explicit server-side actions;
 - incremental modernization without unnecessary rewrites.
 
 ## Why the production repositories are private
 
 The private repositories contain implementation detail that should not be exposed simply to prove that the work exists: production architecture, operational data models, provider integrations, security boundaries and proprietary business logic.
 
-This portfolio therefore uses **curated case studies and synthetic examples**. It shows how the systems are designed and how the engineering work is governed without turning public documentation into an attack map.
+This portfolio therefore uses **curated case studies and independent synthetic implementations**. The reference projects are executable and tested, but do not reproduce production source or turn public documentation into an attack map.
 
 ## CV-ready summary
 
@@ -71,4 +75,4 @@ A concise professional summary suitable for a CV, proposal or profile is availab
 
 ---
 
-**Public evidence:** the governance model in this repository is itself versioned, inspectable and used as the operating baseline for the private projects represented here.
+**Public evidence:** the governance model is versioned and inspectable, while the reference implementations provide executable examples with automated tests.

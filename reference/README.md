@@ -2,16 +2,16 @@
 
 [![Public reference CI](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml/badge.svg)](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml)
 
-Independent, executable implementations of engineering patterns used in private production work. They are designed for inspection and testing, not as source-code mirrors.
+Independent, executable implementations of engineering patterns used in private production work. The canonical public presentation now lives in dedicated repositories; the copies under this hub remain preserved for governance history and aggregate validation.
 
 **4 projects · 28 automated tests · Node.js 22 · zero runtime dependencies**
 
 | Reference | Focus | Validation |
 | --- | --- | --- |
-| [Agentic Operations Gateway](./agentic-operations-gateway/) | constrained agent actions, authorization, policy decisions, idempotency, leases, human review, optimistic concurrency | syntax checks + 7 tests |
-| [Deterministic Data Migrations](./deterministic-data-migrations/) | plan/review/authorize/apply, deterministic conflicts, authorization digests, resumable chunks, stale-state protection | syntax checks + 7 tests |
-| [Selective Deployment Guard](./selective-deployment-guard/) | runtime impact mapping, selective targets, validation/deploy separation, fail-closed full impact | syntax checks + 7 tests |
-| [Conversational Operations Router](./conversational-operations-router/) | context, ambiguity, natural confirmations, pending-state TTL, allowlisted action execution | syntax checks + 7 tests |
+| [Agentic Operations Gateway](https://github.com/intergonzalo/agentic-operations-gateway) | constrained agent actions, authorization, policy decisions, idempotency, leases, human review, optimistic concurrency | syntax checks + 7 tests |
+| [Deterministic Data Migrations](https://github.com/intergonzalo/deterministic-data-migrations) | plan/review/authorize/apply, deterministic conflicts, authorization digests, resumable chunks, stale-state protection | syntax checks + 7 tests |
+| [Selective Deployment Guard](https://github.com/intergonzalo/selective-deployment-guard) | runtime impact mapping, selective targets, validation/deploy separation, fail-closed full impact | syntax checks + 7 tests |
+| [Conversational Operations Router](https://github.com/intergonzalo/conversational-operations-router) | context, ambiguity, natural confirmations, pending-state TTL, allowlisted action execution | syntax checks + 7 tests |
 
 ## Design principle
 

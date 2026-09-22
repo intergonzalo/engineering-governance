@@ -66,7 +66,7 @@ Current engineering work adds a constrained remote-agent boundary over existing 
 
 The agent layer does not receive arbitrary datastore access and does not duplicate the authoritative financial/document workflow. It calls canonical server-side business boundaries so the traditional UI and agent-driven flows remain governed by the same invariants.
 
-A fully independent public implementation of these patterns is available in [Agentic Operations Gateway](../../reference/agentic-operations-gateway/).
+A fully independent public implementation of these patterns is available in [Agentic Operations Gateway](https://github.com/intergonzalo/agentic-operations-gateway).
 
 ### 7. Deterministic high-volume migrations
 
@@ -74,7 +74,7 @@ Migration tooling separates **plan, review, authorization and apply** instead of
 
 This design supports large migrations and repeated dry runs while preserving live-only data unless deletion is separately and deliberately modeled.
 
-A synthetic executable version of the pattern is available in [Deterministic Data Migrations](../../reference/deterministic-data-migrations/).
+A synthetic executable version of the pattern is available in [Deterministic Data Migrations](https://github.com/intergonzalo/deterministic-data-migrations).
 
 ### 8. Scale-safe reporting
 

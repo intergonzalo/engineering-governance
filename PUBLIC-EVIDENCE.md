@@ -4,10 +4,10 @@ This map connects public, executable evidence to the engineering capabilities de
 
 | Capability | Public executable proof | Tested invariants | Private-source application |
 | --- | --- | --- | --- |
-| Constrained agentic operations | [Agentic Operations Gateway](./reference/agentic-operations-gateway/) | scope reduction, hard stops, human-review routing, mutation idempotency, claims/leases, finite retries, optimistic concurrency | [TMJ Securitizadora](./portfolio/tmj-securitizadora/) |
-| Deterministic migration/reconciliation | [Deterministic Data Migrations](./reference/deterministic-data-migrations/) | deterministic planning, explicit conflicts, authorization binding, stale-state detection, resumable chunks, replay protection | [TMJ Securitizadora](./portfolio/tmj-securitizadora/) |
-| Selective / fail-closed delivery | [Selective Deployment Guard](./reference/selective-deployment-guard/) | docs skip, validation-only changes, mapped targets, shared dependency expansion, unknown runtime => blocked full impact | TMJ, Tallerito and the public governance model |
-| Conversational operational AI | [Conversational Operations Router](./reference/conversational-operations-router/) | current context, ambiguity candidates, indexed follow-ups, natural confirmation, pending-state TTL, action allowlist | [Tallerito](./portfolio/tallerito/) |
+| Constrained agentic operations | [Agentic Operations Gateway](https://github.com/intergonzalo/agentic-operations-gateway) | scope reduction, hard stops, human-review routing, mutation idempotency, claims/leases, finite retries, optimistic concurrency | [TMJ Securitizadora](./portfolio/tmj-securitizadora/) |
+| Deterministic migration/reconciliation | [Deterministic Data Migrations](https://github.com/intergonzalo/deterministic-data-migrations) | deterministic planning, explicit conflicts, authorization binding, stale-state detection, resumable chunks, replay protection | [TMJ Securitizadora](./portfolio/tmj-securitizadora/) |
+| Selective / fail-closed delivery | [Selective Deployment Guard](https://github.com/intergonzalo/selective-deployment-guard) | docs skip, validation-only changes, mapped targets, shared dependency expansion, unknown runtime => blocked full impact | TMJ, Tallerito and the public governance model |
+| Conversational operational AI | [Conversational Operations Router](https://github.com/intergonzalo/conversational-operations-router) | current context, ambiguity candidates, indexed follow-ups, natural confirmation, pending-state TTL, action allowlist | [Tallerito](./portfolio/tallerito/) |
 
 ## Validation surface
 
@@ -18,7 +18,8 @@ All four reference projects:
 - have no runtime dependencies;
 - expose a runnable demo;
 - run syntax checks and seven automated tests each;
-- are exercised by [Public reference CI](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml).
+- each has its own dedicated GitHub Actions CI on the standalone repository;
+- the hub copies are also exercised by [aggregate Public reference CI](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml).
 
 That is **28 automated tests across four independently executable references**.
 

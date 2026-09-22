@@ -2,7 +2,7 @@
 
 **Business · Product · Engineering**
 
-[![Public reference CI](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml/badge.svg)](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml)
+[![Agentic CI](https://github.com/intergonzalo/agentic-operations-gateway/actions/workflows/ci.yml/badge.svg)](https://github.com/intergonzalo/agentic-operations-gateway/actions/workflows/ci.yml) [![Conversational CI](https://github.com/intergonzalo/conversational-operations-router/actions/workflows/ci.yml/badge.svg)](https://github.com/intergonzalo/conversational-operations-router/actions/workflows/ci.yml) [![Migration CI](https://github.com/intergonzalo/deterministic-data-migrations/actions/workflows/ci.yml/badge.svg)](https://github.com/intergonzalo/deterministic-data-migrations/actions/workflows/ci.yml) [![Deployment CI](https://github.com/intergonzalo/selective-deployment-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/intergonzalo/selective-deployment-guard/actions/workflows/ci.yml)
 
 I build operating systems for real businesses: turning commercial, legal and operational requirements into software, workflows, controls and repeatable delivery.
 
@@ -10,14 +10,14 @@ My work sits at the intersection of **business design, product ownership and eng
 
 ## Public proof
 
-**4 executable references · 28 automated tests · public CI**
+**4 dedicated executable repositories · 28 automated tests · dedicated public CI**
 
 | Capability | Executable evidence |
 | --- | --- |
-| Secure agentic systems | [Agentic Operations Gateway](https://github.com/intergonzalo/engineering-governance/tree/main/reference/agentic-operations-gateway) |
-| Deterministic / resumable migrations | [Deterministic Data Migrations](https://github.com/intergonzalo/engineering-governance/tree/main/reference/deterministic-data-migrations) |
-| Safe selective CI/CD | [Selective Deployment Guard](https://github.com/intergonzalo/engineering-governance/tree/main/reference/selective-deployment-guard) |
-| Conversational operational AI | [Conversational Operations Router](https://github.com/intergonzalo/engineering-governance/tree/main/reference/conversational-operations-router) |
+| Secure agentic systems | [Agentic Operations Gateway](https://github.com/intergonzalo/agentic-operations-gateway) |
+| Deterministic / resumable migrations | [Deterministic Data Migrations](https://github.com/intergonzalo/deterministic-data-migrations) |
+| Safe selective CI/CD | [Selective Deployment Guard](https://github.com/intergonzalo/selective-deployment-guard) |
+| Conversational operational AI | [Conversational Operations Router](https://github.com/intergonzalo/conversational-operations-router) |
 
 ## Production case studies
 

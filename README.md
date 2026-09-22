@@ -8,14 +8,14 @@ I build operating systems for real businesses: translating commercial, legal and
 
 ## Public code proof
 
-**4 executable reference implementations · 28 automated tests · Node.js 22 · zero runtime dependencies · public CI**
+**4 dedicated public reference repositories · 28 automated tests · Node.js 22 · zero runtime dependencies · dedicated + aggregate public CI**
 
 | Reference | What it proves |
 | --- | --- |
-| [Agentic Operations Gateway](./reference/agentic-operations-gateway/) | constrained agent authority, scopes, policy decisions, idempotency, claims/leases, human review and optimistic concurrency |
-| [Deterministic Data Migrations](./reference/deterministic-data-migrations/) | PLAN → REVIEW → AUTHORIZE → APPLY, explicit conflicts, deterministic authorization, resumability and stale-state protection |
-| [Selective Deployment Guard](./reference/selective-deployment-guard/) | change-impact mapping, validation/deploy separation, selective targets and fail-closed unknown runtime impact |
-| [Conversational Operations Router](./reference/conversational-operations-router/) | conversational context, ambiguity handling, natural follow-ups, TTL-bound confirmation and allowlisted domain execution |
+| [Agentic Operations Gateway](https://github.com/intergonzalo/agentic-operations-gateway) | constrained agent authority, scopes, policy decisions, idempotency, claims/leases, human review and optimistic concurrency |
+| [Deterministic Data Migrations](https://github.com/intergonzalo/deterministic-data-migrations) | PLAN → REVIEW → AUTHORIZE → APPLY, explicit conflicts, deterministic authorization, resumability and stale-state protection |
+| [Selective Deployment Guard](https://github.com/intergonzalo/selective-deployment-guard) | change-impact mapping, validation/deploy separation, selective targets and fail-closed unknown runtime impact |
+| [Conversational Operations Router](https://github.com/intergonzalo/conversational-operations-router) | conversational context, ambiguity handling, natural follow-ups, TTL-bound confirmation and allowlisted domain execution |
 
 See the complete [Public Evidence Map](./PUBLIC-EVIDENCE.md).
 

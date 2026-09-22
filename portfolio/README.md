@@ -8,14 +8,14 @@ My work sits at the intersection of **business design, product ownership and eng
 
 ## Public code proof
 
-**4 executable reference implementations · 28 automated tests · public CI**
+**4 dedicated public repositories · 28 automated tests · dedicated public CI**
 
 | Capability | Public implementation | Production context |
 | --- | --- | --- |
-| Secure agentic operations | [Agentic Operations Gateway](../reference/agentic-operations-gateway/) | [TMJ Securitizadora](./tmj-securitizadora/) |
-| Deterministic migration/reconciliation | [Deterministic Data Migrations](../reference/deterministic-data-migrations/) | [TMJ Securitizadora](./tmj-securitizadora/) |
-| Selective / fail-closed CI/CD | [Selective Deployment Guard](../reference/selective-deployment-guard/) | TMJ, Tallerito and this governance model |
-| Conversational operational AI | [Conversational Operations Router](../reference/conversational-operations-router/) | [Tallerito](./tallerito/) |
+| Secure agentic operations | [Agentic Operations Gateway](https://github.com/intergonzalo/agentic-operations-gateway) | [TMJ Securitizadora](./tmj-securitizadora/) |
+| Deterministic migration/reconciliation | [Deterministic Data Migrations](https://github.com/intergonzalo/deterministic-data-migrations) | [TMJ Securitizadora](./tmj-securitizadora/) |
+| Selective / fail-closed CI/CD | [Selective Deployment Guard](https://github.com/intergonzalo/selective-deployment-guard) | TMJ, Tallerito and this governance model |
+| Conversational operational AI | [Conversational Operations Router](https://github.com/intergonzalo/conversational-operations-router) | [Tallerito](./tallerito/) |
 
 The full evidence map is available in [PUBLIC-EVIDENCE.md](../PUBLIC-EVIDENCE.md).
 

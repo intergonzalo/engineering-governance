@@ -1,0 +1,45 @@
+name: Public reference CI
+
+on:
+  pull_request:
+    paths:
+      - 'reference/**'
+      - '.github/workflows/reference-ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'reference/**'
+      - '.github/workflows/reference-ci.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  reference-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - reference/agentic-operations-gateway
+          - reference/deterministic-data-migrations
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Detect project
+        id: detect
+        shell: bash
+        run: |
+          if [[ -f "${{ matrix.project }}/package.json" ]]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Syntax check
+        if: steps.detect.outputs.present == 'true'
+        run: npm --prefix "${{ matrix.project }}" run check
+      - name: Tests
+        if: steps.detect.outputs.present == 'true'
+        run: npm --prefix "${{ matrix.project }}" test

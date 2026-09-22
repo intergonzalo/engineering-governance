@@ -76,7 +76,7 @@ Runtime credentials, payment configuration, e-mail configuration and other sensi
 
 [`examples/ai-action-boundary.php`](./examples/ai-action-boundary.php) is **synthetic** and illustrates the allowlisted-action pattern. It is not copied from the production repository.
 
-For a larger executable public example of constrained agent/action architecture, see [Agentic Operations Gateway](../../reference/agentic-operations-gateway/).
+For a larger executable public example of constrained agent/action architecture, see [Agentic Operations Gateway](https://github.com/intergonzalo/agentic-operations-gateway).
 
 ## What is deliberately not public
 

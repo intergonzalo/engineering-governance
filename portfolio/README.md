@@ -1,18 +1,31 @@
 # Gonzalo Burgos — Business, Product & Engineering
 
+[![Public reference CI](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml/badge.svg)](https://github.com/intergonzalo/engineering-governance/actions/workflows/reference-ci.yml)
+
 I build operating systems for real businesses: translating commercial, legal and operational requirements into software, workflows, controls and repeatable delivery.
 
 My work sits at the intersection of **business design, product ownership and engineering execution**. I use AI-assisted development intensively, but the operating model is human-led: requirements, architecture, risk boundaries, acceptance criteria and release decisions stay explicit and traceable.
+
+## Public code proof
+
+**4 executable reference implementations · 28 automated tests · public CI**
+
+| Capability | Public implementation | Production context |
+| --- | --- | --- |
+| Secure agentic operations | [Agentic Operations Gateway](../reference/agentic-operations-gateway/) | [TMJ Securitizadora](./tmj-securitizadora/) |
+| Deterministic migration/reconciliation | [Deterministic Data Migrations](../reference/deterministic-data-migrations/) | [TMJ Securitizadora](./tmj-securitizadora/) |
+| Selective / fail-closed CI/CD | [Selective Deployment Guard](../reference/selective-deployment-guard/) | TMJ, Tallerito and this governance model |
+| Conversational operational AI | [Conversational Operations Router](../reference/conversational-operations-router/) | [Tallerito](./tallerito/) |
+
+The full evidence map is available in [PUBLIC-EVIDENCE.md](../PUBLIC-EVIDENCE.md).
 
 ## Selected work
 
 | Project | What it demonstrates | Source model |
 | --- | --- | --- |
-| [Engineering Governance](../) | Engineering operating standards, issue-driven execution, branch/PR discipline, selective deploy and fail-closed safeguards | Public |
-| [Agentic Operations Gateway](../reference/agentic-operations-gateway/) | Executable constrained-agent architecture: authorization, policies, idempotency, leases, human review and optimistic concurrency | Public executable reference |
-| [Deterministic Data Migrations](../reference/deterministic-data-migrations/) | Executable PLAN/REVIEW/AUTHORIZE/APPLY migration model with conflicts, resumability and stale-state protection | Public executable reference |
-| [TMJ Securitizadora](./tmj-securitizadora/) | Financial operations platform, role-specific applications, document workflows, operational queues, agentic boundaries, migrations and guarded Firebase delivery | Private source / public case study |
-| [Tallerito](./tallerito/) | Automotive-workshop SaaS, PHP/MySQL modernization, DEV/Production isolation and production voice/text AI operations | Private source / public case study |
+| [Engineering Governance](../) | engineering operating standards, issue-driven execution, branch/PR discipline, selective deploy and fail-closed safeguards | Public |
+| [TMJ Securitizadora](./tmj-securitizadora/) | financial operations platform, role-specific applications, document workflows, operational queues, agentic boundaries, migrations and guarded Firebase delivery | Private source / public case study |
+| [Tallerito](./tallerito/) | automotive-workshop SaaS, PHP/MySQL modernization, DEV/Production isolation and production voice/text AI operations | Private source / public case study |
 
 ## What I do
 
@@ -48,21 +61,6 @@ flowchart LR
 
 The process is designed to keep speed and control compatible: ship small, preserve existing architecture, document decisions, and make deployment scope explicit.
 
-## Engineering themes across the portfolio
-
-- workflow and state-machine design;
-- canonical identities and traceable transitions;
-- idempotent operations and retry-safe integrations;
-- secure agent/action boundaries and least privilege;
-- claims, leases, finite retries and optimistic concurrency;
-- deterministic migration planning and conflict resolution;
-- reusable application services instead of duplicated page logic;
-- CI/CD governance and selective deployment;
-- regression testing around business-critical flows;
-- mobile operational UX and information-dense back-office interfaces;
-- voice/text AI constrained by explicit server-side actions;
-- incremental modernization without unnecessary rewrites.
-
 ## Why the production repositories are private
 
 The private repositories contain implementation detail that should not be exposed simply to prove that the work exists: production architecture, operational data models, provider integrations, security boundaries and proprietary business logic.
@@ -72,7 +70,3 @@ This portfolio therefore uses **curated case studies and independent synthetic i
 ## CV-ready summary
 
 A concise professional summary suitable for a CV, proposal or profile is available in [`CV-SUMMARY.md`](./CV-SUMMARY.md).
-
----
-
-**Public evidence:** the governance model is versioned and inspectable, while the reference implementations provide executable examples with automated tests.
